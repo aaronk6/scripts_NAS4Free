@@ -295,7 +295,7 @@ backup() {
 
     # If there is no snapshot on dest fs, backup the oldest snapshot on the src fs
     if [ -z "$newestSnapDestFs" ]; then
-        log_info "$LOGFILE" "$logPrefix: No snapfound found in destination filesystem"
+        log_info "$LOGFILE" "$logPrefix: No snapshot found in destination filesystem"
 
         if [ -z "$oldestSnapSrcFs" ]; then
             log_info "$LOGFILE" "$logPrefix: No snapshot to backup found in source filesystem"
